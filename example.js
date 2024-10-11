@@ -2,6 +2,8 @@ function doSomeFunkyStuff() {
   // ...
 }
 
-if (process.env.MPP_ACTIVE) {
+const { MPP_ACTIVE } = process.env;
+
+if (MPP_ACTIVE) {
   doSomeFunkyStuff();
 }
